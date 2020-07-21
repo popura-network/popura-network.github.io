@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Popura Network</title>
+    <link>/</link>
+    <description>Recent content on Popura Network</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 21 Jul 2020 11:03:35 -0400</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Popura, an alternative Yggdrasil Network client</title>
+      <link>/posts/about-popura/</link>
+      <pubDate>Tue, 21 Jul 2020 11:03:35 -0400</pubDate>
+      
+      <guid>/posts/about-popura/</guid>
+      <description>Popura is an alternative Yggdrasil Network client.
+Popura uses the same Yggdrasil core API internally, but adds some useful and experimental features which the original client lacks.
+Yggdrasil Network is a peer-to-peer IPv6 network with automatic end-to-end encryption, distributed IP address allocation, and DHT-based routing information exchange.
+Download the most recent version of Popura here.
+Popura features:
+ Automatic Internet peering Advertising /64 prefix to LAN Meshname naming system integration DHT crawling method in Admin API  Autopeering Popura has a built-in peer list.</description>
+    </item>
+    
+    <item>
+      <title>Popura Network website is online</title>
+      <link>/posts/site-online/</link>
+      <pubDate>Mon, 20 Jul 2020 14:21:15 -0400</pubDate>
+      
+      <guid>/posts/site-online/</guid>
+      <description>It&amp;rsquo;s a very low-traffic blog about the network infrastructure decentralization. Follow the RSS feed for updates or subscribe to the Telegram channel @PopuraChan.</description>
+    </item>
+    
+  </channel>
+</rss>

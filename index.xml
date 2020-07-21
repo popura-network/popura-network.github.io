@@ -18,11 +18,10 @@
       
       <guid>/posts/about-popura/</guid>
       <description>Popura is an alternative Yggdrasil Network client.
-Popura uses the same Yggdrasil core API internally, but adds some useful and experimental features which the original client lacks.
+Popura uses the same Yggdrasil&amp;rsquo;s core API internally, but adds some useful and experimental features which the original client lacks.
 Yggdrasil Network is a peer-to-peer IPv6 network with automatic end-to-end encryption, distributed IP address allocation, and DHT-based routing information exchange.
-Download the most recent version of Popura here.
 Popura features:
- Automatic Internet peering Advertising /64 prefix to LAN Meshname naming system integration DHT crawling method in Admin API  Autopeering Popura has a built-in peer list.</description>
+ Automatic Internet peering Advertising /64 prefix to LAN Meshname naming system integration DHT crawling method in Admin API  By default, Popura works just like the original yggdrasil client, all features must be enabled manually.</description>
     </item>
     
     <item>

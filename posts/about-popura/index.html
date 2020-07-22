@@ -28,33 +28,33 @@
     
     <meta property="og:title" content="Popura, an alternative Yggdrasil Network client" />
 <meta property="og:description" content="Popura is an alternative Yggdrasil Network client.
+Yggdrasil Network is a peer-to-peer IPv6 network with link-local peer discovery, automatic end-to-end encryption, distributed IP address allocation, and DHT-based routing information exchange.
 Popura uses the same Yggdrasil&rsquo;s core API internally, but adds some useful and experimental features which the original client lacks.
-Yggdrasil Network is a peer-to-peer IPv6 network with automatic end-to-end encryption, distributed IP address allocation, and DHT-based routing information exchange.
-Popura features:
- Automatic Internet peering Advertising /64 prefix to LAN Meshname naming system integration DHT crawling method in Admin API  By default, Popura works just like the original yggdrasil client, all features must be enabled manually." />
+Popura&rsquo;s features:
+ Automatic Internet peering Advertising /64 prefix to LAN Meshname naming system DHT crawling method in Admin API  By default, it works just like the original yggdrasil client, all features must be enabled manually." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/posts/about-popura/" />
 <meta property="article:published_time" content="2020-07-21T11:03:35-04:00" />
 <meta property="article:modified_time" content="2020-07-21T11:03:35-04:00" />
 <meta itemprop="name" content="Popura, an alternative Yggdrasil Network client">
 <meta itemprop="description" content="Popura is an alternative Yggdrasil Network client.
+Yggdrasil Network is a peer-to-peer IPv6 network with link-local peer discovery, automatic end-to-end encryption, distributed IP address allocation, and DHT-based routing information exchange.
 Popura uses the same Yggdrasil&rsquo;s core API internally, but adds some useful and experimental features which the original client lacks.
-Yggdrasil Network is a peer-to-peer IPv6 network with automatic end-to-end encryption, distributed IP address allocation, and DHT-based routing information exchange.
-Popura features:
- Automatic Internet peering Advertising /64 prefix to LAN Meshname naming system integration DHT crawling method in Admin API  By default, Popura works just like the original yggdrasil client, all features must be enabled manually.">
+Popura&rsquo;s features:
+ Automatic Internet peering Advertising /64 prefix to LAN Meshname naming system DHT crawling method in Admin API  By default, it works just like the original yggdrasil client, all features must be enabled manually.">
 <meta itemprop="datePublished" content="2020-07-21T11:03:35-04:00" />
 <meta itemprop="dateModified" content="2020-07-21T11:03:35-04:00" />
-<meta itemprop="wordCount" content="622">
+<meta itemprop="wordCount" content="674">
 
 
 
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Popura, an alternative Yggdrasil Network client"/>
 <meta name="twitter:description" content="Popura is an alternative Yggdrasil Network client.
+Yggdrasil Network is a peer-to-peer IPv6 network with link-local peer discovery, automatic end-to-end encryption, distributed IP address allocation, and DHT-based routing information exchange.
 Popura uses the same Yggdrasil&rsquo;s core API internally, but adds some useful and experimental features which the original client lacks.
-Yggdrasil Network is a peer-to-peer IPv6 network with automatic end-to-end encryption, distributed IP address allocation, and DHT-based routing information exchange.
-Popura features:
- Automatic Internet peering Advertising /64 prefix to LAN Meshname naming system integration DHT crawling method in Admin API  By default, Popura works just like the original yggdrasil client, all features must be enabled manually."/>
+Popura&rsquo;s features:
+ Automatic Internet peering Advertising /64 prefix to LAN Meshname naming system DHT crawling method in Admin API  By default, it works just like the original yggdrasil client, all features must be enabled manually."/>
 
 	
   </head>
@@ -173,27 +173,28 @@ Popura features:
       
     </header>
     <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p><a href="https://github.com/popura-network/Popura">Popura</a> is an alternative Yggdrasil Network client.</p>
+<p><em>Yggdrasil Network</em> is a peer-to-peer IPv6 network with link-local peer discovery, automatic end-to-end encryption, distributed IP address allocation, and DHT-based routing information exchange.</p>
 <p>Popura uses the same <a href="https://github.com/yggdrasil-network/yggdrasil-go">Yggdrasil&rsquo;s</a> core API internally, but adds some useful and experimental features which the original client lacks.</p>
-<p><em>Yggdrasil Network</em> is a peer-to-peer IPv6 network with automatic end-to-end encryption, distributed IP address allocation, and DHT-based routing information exchange.</p>
-<p>Popura features:</p>
+<p>Popura&rsquo;s features:</p>
 <ul>
 <li><a href="#autopeering">Automatic Internet peering</a></li>
 <li><a href="#router-advertisement">Advertising /64 prefix to LAN</a></li>
-<li><a href="#meshname">Meshname naming system integration</a></li>
+<li><a href="#meshname">Meshname naming system</a></li>
 <li><a href="#dhtcrawl">DHT crawling method in Admin API</a></li>
 </ul>
-<p>By default, Popura works just like the original yggdrasil client, all features must be enabled manually.
+<p>By default, it works just like the original yggdrasil client, all features must be enabled manually.
 Popura adds new command line flags and config file sections to control those features.</p>
 <p><strong>Download</strong> the most recent version of Popura <a href="https://github.com/popura-network/Popura/releases">here</a>.</p>
 <h3 id="autopeering">Autopeering</h3>
 <p>Popura has a built-in peer list. If there are no Internet peers configured, it picks a single random peer out of ten with least latency.
 If a picked peer goes offline, Popura picks another one, so it&rsquo;s effectively &ldquo;autohealing&rdquo;.
 To enable automatic Internet peering, run yggdrasil with <code>-autopeer</code> command line flag.</p>
+<p>By default, peer list is compiled from the <a href="https://github.com/yggdrasil-network/public-peers/">public-peers repository</a>.</p>
 <h3 id="router-advertisement">Router advertisement</h3>
 <p>Popura is able to advertise a /64 prefix to LAN clients for stateless IPv6 address autoconfiguration (SLAAC).</p>
 <p>While it is generally encouraged that nodes run the software locally, to provide end-to-end cryptographic sessions and participate in routing, this is not always practical. Some network devices will inevitably be unable to run user code, but may still provide IPv6 connectivity. Users may also prefer to avoid running the software on an otherwise compatible system, perhaps to provide guest access or to avoid any overhead to battery powered devices. To that end, it is each node is assigned a /64 prefix in parallel to their address. A node acting as a router may advertise this prefix just as they would any other ordinary IPv6 network.</p>
 <p>This may be best illustrated by example. Suppose a node has generated the address: 200:1111:2222:3333:4444:5555:6666:7777. Then the node may also use addresses from the prefix: 300:1111:2222:3333::/64 (note the 200 changed to 300, a separate /8 is used for prefixes, but the rest of the first 64 bits are the same).</p>
-<p><strong>This feature currently works on Linux systems.</strong> Other OS support might be added later, if there is a demand for it.</p>
+<p><strong>This feature currently works on Linux systems.</strong> Support for other operating systems might be added later, if there will be a demand for it.</p>
 <p>Make sure to enable IPv6 packet forwarding:</p>
 <pre><code>sudo sysctl -w net.ipv6.conf.all.forwarding=1
 </code></pre><p>An example RAdv section in Popura&rsquo;s config:</p>
@@ -204,15 +205,17 @@ To enable automatic Internet peering, run yggdrasil with <code>-autopeer</code> 
     SetGatewayIP: true
   }
 </code></pre><p><em>Interface</em> is LAN network interface, for example <code>wlan0</code> or <code>eth0</code>.</p>
-<p><em>SetGatewayIP</em> automatically adds an IP address to the <em>Interface</em>.</p>
+<p><em>SetGatewayIP</em> option automatically adds an IP address to the <em>Interface</em>.</p>
 <h3 id="meshname">Meshname</h3>
 <p><a href="https://github.com/zhoreeq/meshname/blob/master/protocol.md">Meshname</a> is a universal naming system for all IPv6-based meshnets, including CJDNS and Yggdrasil</p>
 <p>Having a naming system is a common requirement for deploying preexisting decentralized applications. I.e., applications for e-mail, XMPP and ActivityPub require domain names for server to server communications.</p>
 <p>Self-organized networks like CJDNS and Yggdrasil Network use public-key cryptography for IP address allocation. Every network node owns a globally unique IPv6 address. Binary form of that address can be encoded with base32 notation for deriving a globally unique name space managed by that node.</p>
 <p>Since there is no need for a global authority or consensus, such a naming system will reliably work in any network split scenarios.</p>
-<p>To generate a sample meshname config for your Yggdrasil node run:</p>
+<p>Meshname implementation in Popura is a local DNS server that can both host and resolve &ldquo;meshname&rdquo; domains.
+It is recommended to configure meshname as an upstream DNS server for the regular DNS server, like dnsmasq or bind.</p>
+<p>To generate a sample meshname config for your Yggdrasil node, run:</p>
 <pre><code>yggdrasil -meshnameconf $(yggdrasil -useconffile /etc/yggdrasil.conf -address)
-</code></pre><p>An example meshname section in Popura&rsquo;s config would look like this:</p>
+</code></pre><p>An example meshname section in Popura&rsquo;s config:</p>
 <pre><code>  Meshname:
   {
     Config:
@@ -228,7 +231,7 @@ To enable automatic Internet peering, run yggdrasil with <code>-autopeer</code> 
     Enable: true
     Listen: &quot;[::1]:53535&quot;
   }
-</code></pre><p>An example dnsmasq config for use with meshname:</p>
+</code></pre><p>An example dnsmasq configuration that uses meshname as an upstream server:</p>
 <pre><code>port=53
 domain-needed
 bogus-priv

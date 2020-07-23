@@ -6,10 +6,21 @@
     <description>Recent content on Popura Network</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 Jul 2020 11:03:35 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 23 Jul 2020 14:58:18 -0400</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Connecting all computers to the meshnet, but for lazy people</title>
+      <link>/posts/yggdrasil-lazy/</link>
+      <pubDate>Thu, 23 Jul 2020 14:58:18 -0400</pubDate>
+      
+      <guid>/posts/yggdrasil-lazy/</guid>
+      <description>Pre-requisites: a Raspberry Pi with a Raspberry Pi OS installed (aka Raspbian). Other armhf devices with Debian-based OSes might also work. Raspberry Pi must be connected to LAN, obviously.
+Commands to run on a Pi:
+wget https://github.com/popura-network/Popura/releases/download/v0.3.14%2Bpopura1/yggdrasil-lazy-0.3.14+popura1-armhf.deb -P /tmp/ sudo dpkg -i /tmp/yggdrasil-lazy-0.3.14+popura1-armhf.deb sudo systemctl start yggdrasil Final result: All computers in LAN have full access to the Yggdrasil Network. Raspberry Pi acts as a router and automatically keeps connection with the global Yggdrasil Network.</description>
+    </item>
     
     <item>
       <title>Popura, an alternative Yggdrasil Network client</title>

@@ -6,10 +6,21 @@
     <description>Recent content in Posts on Popura Network</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 23 Jul 2020 14:58:18 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 18 Aug 2020 05:47:57 -0400</lastBuildDate>
     
 	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>PirateModem</title>
+      <link>/posts/piratemodem/</link>
+      <pubDate>Tue, 18 Aug 2020 05:47:57 -0400</pubDate>
+      
+      <guid>/posts/piratemodem/</guid>
+      <description>PirateModem is a low-powered electronic device that connects computers to the global off-the-grid communication network.
+This device effectively creates a mesh network node which utilizes every available communication medium, be it a local wireless connection, the Internet or anything else.
+Features  Easy to install mesh node for the Yggdrasil Network Enables access to the Yggdrasil Network for all LAN computers when connected to a regular SOHO router If a wireless adapter is available, creates an open WiFi access point for wireless peering, isolated from the Internet If the Internet connection works, automatically connects to the global overlay mesh Highly customizable open source software based on Openwrt  PirateModem built with a Raspberry Pi, connected to a regular SOHO router:</description>
+    </item>
     
     <item>
       <title>Connecting all computers to the meshnet, but for lazy people</title>
